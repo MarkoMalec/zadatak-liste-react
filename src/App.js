@@ -7,10 +7,12 @@ import UserC from "./UserC";
 class App extends React.Component {
   state = {
     users: [
-      { name: "Marko", years: 25 },
-      { name: "David", years: 33 },
-      { name: "Dario", years: 12 },
-      { name: "Marin", years: 99 },
+      { id: 1, name: "Marko", years: 25 },
+      { id: 2, name: "David", years: 33 },
+      { id: 3, name: "Dario", years: 12 },
+      { id: 4, name: "Danko", years: 30 },
+      { id: 5, name: "Ivan", years: 19 },
+      { id: 6, name: "Marac", years: 55 },
     ],
   };
 
@@ -19,6 +21,7 @@ class App extends React.Component {
     arr[index].years += 1;
     this.setState({ users: arr });
   }
+
 // ovaj primjer funkcije je ako hocemo svim korisnicima nadodati godinu
 // godine se dodaju svim korisnicima radi metode map
   // uvecajGodinu = (index) => {
